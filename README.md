@@ -39,6 +39,7 @@ Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing.
 - [Git Fire](#git-fire)
 - [Git Town](#git-town)
 - [Git Fu](#git-fu)
+- [cogit](#cogit)
 
 
 ## [git-extras](https://github.com/tj/git-extras)
@@ -1263,6 +1264,19 @@ TBD
 ## [git-fu](https://github.com/divoxx/git-fu)
 
 TBD
+
+## [cogit](https://github.com/nqzero/cogit)
+an alias for working with `--git-dir`. useful for overlaying 2 repos in a single working directory
+
+```
+$ cogit gitx
+alias gitx="git --git-dir=$PWD/.gitx --working-tree=$PWD"
+$ gitx init
+Initialized empty Git repository in /home/user/working/dir
+$ gitx-chain
+created .gitx/hooks/pre-commit for saving .git/HEAD commit
+```
+
 
 
 ## License
